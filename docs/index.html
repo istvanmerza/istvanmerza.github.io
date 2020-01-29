@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Istvan Merza</title>
+   <!-- Oh so you can read HTML? Fantastic! I'm sure you can find me on LinkedIn and Youtube as well :-) -->
+   <meta charset="UTF-8">
+   <meta name="description" content="An experimental hobby/demo web server maintained (hopefully) by Istvan Merza. I created it for fun. This is my real name." />
+   <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=UA-141707845-1" as="script">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141707845-1"></script>
+<script>
+// I include GTAG in true 1984 spirit :-) GIYF!
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-141707845-1');
+</script>
+<style>
+:root {--fg:black;--bg:white;--hi:black;--me:transparent; }
+[data-theme="dark"] {--fg:#e1e1e1;--bg:#292929;--hi:black;--me:#f63a00; }
+        body { background-color:var(--bg);color:var(--fg); } 
+         div { max-width:675px;margin:auto; }
+    pre code { font-family:Consolas,'Lucida Console','DejaVu Sans Mono',monospace,monospace;white-space:pre;line-height:1rem;font-size:12px; }
+        span { display:block;vertical-align:top; }
+       tspan { white-space:pre;fill:var(--hi); }
+      circle { fill:var(--me);stroke-width:0; }
+         .vw { position: relative;padding-bottom: 56.25%;padding-top: 25px;height: 0;max-width: 1177px;margin: 0 auto; }
+  .vw iframe { position: absolute;top: 0;left: 0;width: 100%;height: 100%;max-height: 883px;border-style:none; }
+</style>
+</head>
+<body><div><pre><code><span style="display: inline-block; width:204px;">whoami
+ * Istvan Merza
+ * IT Administrator
+ * Monty Python fan
+ * Visited Iceland
+ * Based in Germany
+ * Liquor of Choice: BEER
+</span><span style="display: inline-block; width:204px;">why this site
+ * online presence
+ * experiment
+ * own server
+ * learn
+</span><span id=dark onclick="switchTheme()"  style="display: inline-block; width:204px;text-align:right;">☀️bright site</span><span style="margin-left:31px;text-align:center;"><!-- Such picture, so ASCII, wow! https://manytools.org/hacker-tools/convert-images-to-ascii-art/ -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" viewBox="0 0 1098 1212">
+<text><tspan dy="1em" x="0%" dx="28.5em">....                     .*/  +++ /,</tspan>
+<tspan dy="1em" x="0%" dx="26.5em">.......,,,,...          ..,** +oooo++ooooo+ /***,****</tspan>
+<tspan dy="1em" x="0%" dx="23em">.........,,,,,*******,,,,....,**//++ooo++   +oo$$oo++++++++ /*.</tspan>
+<tspan dy="1em" x="0%" dx="20.5em">..,,***////////////// //    //****/    +++++    +ooo$$$$$$$$$$$oooo+  *.</tspan>
+<tspan dy="1em" x="0%" dx="19em">.,,,***/////    ++++  +++      +            +++++oooo$$$$$$$$$$$$$$$$$$$@*,</tspan>
+<tspan dy="1em" x="0%" dx="17.5em">.,,,,,,***//      +oooooooo$$oooooooo++++   +++++oooo++oooo$$$$$$$$$$$$$$$$@@@@@@@$o@$*,.</tspan>
+<tspan dy="1em" x="0%" dx="17em">....,,,,**//   ++++ooo$$ooooo$$$$$$$oooo+++     ++++++++++++++oooooooo$$$$$$$$$$$$@@@@@@@/*...</tspan>
+<tspan dy="1em" x="0%" dx="15.5em">..,,,,,*/    ++oooo$$$$$$oooo$$$$$$$o+++         ++++++++++++++++++++++ooo$$$$$$$$$$$$$$$$$o+ /,..</tspan>
+<tspan dy="1em" x="0%" dx="15.5em">.,,,,***/    +++oooooooooooooo$$$$$oo+    //  +++++++oooooooooooooooooo+++++oooo$$$$$$$$$$$$$$oo *,.</tspan>
+<tspan dy="1em" x="0%" dx="15em">...,,,,*///  +++ooo+++++ooooooo$$$$oo++       ++oooooo$$$$$$$$$$$$$$$$$$$ooooooo+++ooooooooo$$$@$$o+/*,,.</tspan>
+<tspan dy="1em" x="0%" dx="12.5em">..,,,,****/   +++++++++++ooo$$$$@@@@@$$$ooooooo$$$$$$@@@@@@@$$@@@@@@@@@$$$$$$$$$$$$$$$$oooooooooooo$$$$oo+ /.</tspan>
+<tspan dy="1em" x="0%" dx="11.5em">.,,,,,,***//  +++++++++++oo$$$@@@@@@@@@@@$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$$ooooooo$$$o++/,,.</tspan>
+<tspan dy="1em" x="0%" dx="10em">...,,,,,***/      +      +oo$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$@$$$$oooo$$$$ //.</tspan>
+<tspan dy="1em" x="0%" dx="10em">..,,,,,,***             +o$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$@@@$$$oooo$$$$o+  /*,</tspan>
+<tspan dy="1em" x="0%" dx="8.5em">..,***,,.**///   /////  ++o$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$@@@$$ooooo$$$$ooo .</tspan>
+<tspan dy="1em" x="0%" dx="8em">.,,***,,,,*///  /////// ++o$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$o$$$$@$$$ooooo$$$oooo+.</tspan>
+<tspan dy="1em" x="0%" dx="6.5em">.,,,**,,,.,,,*////****/  +ooo$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$oooo$$$$$$$$$ooooo$$$$,</tspan>
+<tspan dy="1em" x="0%" dx="6.5em">,,,,,,,.,,,**//*****//  ++oo$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$ooo$$$$$$$o </tspan>
+<tspan dy="1em" x="0%" dx="6em">.***,..,,,,********//  +++o$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$@@@@@@@$$$$$$$$$$$$$$$@@$$$ooo$$$$$$$ .</tspan>
+<tspan dy="1em" x="0%" dx="5.5em">.,***,,,,,,*********   ++ooo$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$$$$$@@$$$oo$$$$$$*.</tspan>
+<tspan dy="1em" x="0%" dx="4em">.,,,,,,,,,,,,,******/// +++oooo$$$$$@@@@@@@@@@@@$$$$$$$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$$$@@@@$$$$$$$oo$$@o,</tspan>
+<tspan dy="1em" x="0%" dx="4em">.,,,,,.,,,,,,*****///    +++ooo$$$$$$@@@@@@@$$$$$$$$oooooo$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$@@@@@@$$$$$ooo$,</tspan>
+<tspan dy="1em" x="0%" dx="4em">,,,,,,,,,,,,******/    ++++ooo$$$$$$$@@@@$$$$$$$oooooooooooooooooooooooooo$$$$$$$$$$$$$$$@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$@@@@@@@@$$$$$o$,</tspan>
+<tspan dy="1em" x="0%" dx="3em">.......,,,,,**/**//      ++++oo$$$$$$$@@@@$$$$$$ooooooooooooooooooooooooooooooooooo$$$$$$$$$$$$@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$@@@@$@@@@@$$$$$,</tspan>
+<tspan dy="1em" x="0%" dx="3em">.......,,,,**///*/  ++   ++++o$$$$$$$$$@@@$$$$$ooooooooooo+++++++++++ooooooooooooooo$$$$$$$$$$$$@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$@@@@$$@@@@@$$$$o+,</tspan>
+<tspan dy="1em" x="0%" dx="2em">.......,,**//  /*// +o+++ +++oo$$$$$$$$$$$$$$$$ooooooooo+++++++++++++++++++++++++ooooooooooo$$$$$$$$@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$$$@@@$o *</tspan>
+<tspan dy="1em" x="0%" dx="2em">..,,,,,,*/// ///// ++++ ++++oooo$$$$$$$$$$$$$oooooooo++++++++++++++++++++++++++++++oooooooooo$$$$$$$$@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$$$$@$o *</tspan>
+<tspan dy="1em" x="0%" dx="0em">,.  .,,,*////   /**// +++ +++++ooooo$$$$$$$$$$$$ooooooo+++++++++++++++++++++++++++++++++++++++ooooooo$$$$$$$@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$$$$$$$o/</tspan>
+<tspan dy="1em" x="0%" dx="0em">*,...,,,/      //**/ ++++ +++++oooo$$$$$$$$$$oooooooo++++++++++++++++   +++  ++++++++++++++++++++oooooo$$$$$$@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$$$$o+ </tspan>
+<tspan dy="1em" x="0%" dx="0em">**,.,*** ++++///*// +o$o++++++ooooo$$$$$$$ooooooooo+++++++++++++++++            ++++++++++++++++++ooooooo$$$$$$@@@@@@@@@@@@@@@@@$$$$$@@@@$$$$$$$$@$$o+ .</tspan>
+<tspan dy="1em" x="0%" dx="0.5em">.,*****     ///// +o$$o+++ooooooo$$$$$$$ooooooooo++++++++++++++++               +++++++++++++++++++++oooooo$$$$@@@@@@@@@@@@@@@@$$$$$$@@@@@@$$$$@@@@$o+/.</tspan>
+<tspan dy="1em" x="0%" dx="1em">,*****       //++$$$$o++ooooo$$$$$$$$oooooooooo+++++++++++++++                        +++++++++++++++ooooooo$$$$$@@@@@@@@@@@@@@$$$$$$$$@@@@$$$$@@@$$$ .</tspan>
+<tspan dy="1em" x="0%" dx="1em">.,,**/  +   / +o$$$$$o++ooooo$$$$$$$ooooooooo++++++++++                                        +++++++++oooooo$$$$$$@@@@@@@@@@@@@$$$$@$@@@@@$$$$$@@$$ .</tspan>
+<tspan dy="1em" x="0%" dx="1em">.,,***  ++  / +$$$$$$oo+ooooo$$$$$$$oooooooo+++++++++++                                           ++++++++oooo$$$$$$$@@@@@@@@@@@@@$$@@@$@@@@@@$$$@@$.</tspan>
+<tspan dy="1em" x="0%" dx="1.5em">.****/ + //  o$$@@@$oooooooo$$$$$$oooo+++++++++++++++                                                +++++++oooo$$$$@@@@@@@@@@@@@@@@@@$$$@@@@@@$$@$.</tspan>
+<tspan dy="1em" x="0%" dx="2em">,**,/   /   o$@@@@$ooooooo$$$$$$$oooo+++++++++++++++                                                 ++++++oooo$$$$$@@@@@@@@@@@@@@@@@@$$@@@@@@$$$$.</tspan>
+<tspan dy="1em" x="0%" dx="2em">,*,,,***/  +o@@@@@$ooooo$$$$$$$ooooo+++++++++++++++++                                        //        ++++++oo$$$$$$@@@@@@@@@@@@@@$@$$$$@@@@@@@$$$ .</tspan>
+<tspan dy="1em" x="0%" dx="2em">.,,,*//// ++o@@@@$$oooo$$$$$$$$oooo++++++++++++++++++                                                +++++++oooo$$$$$$@@@@@@@@@@@@@@@$$$$@@@@@@@$$,</tspan>
+<tspan dy="1em" x="0%" dx="2.5em">,*,*    ++o$@@$$$$oooo$$$$$$$$ooooooooooooo++++++++++++                                     ++++ooooooooooooooooo$$$$$@@@@@@@@@@@@@@$$$$@@@@@@@$$,</tspan>
+<tspan dy="1em" x="0%" dx="2.5em">.,*/    +++o$$$$$$$ooo$$$$$$$$$$$$$$$$$$$$$ooooo++++++++                            ++++oooo$$$$$$$$$$$$$$$$$$$$$$$$$$@@@@@@@@@@@@@@$$$$@@@@@@@$$,</tspan>
+<tspan dy="1em" x="0%" dx="3em">.,   ++++oo$$$$$$$$$oo$$$$$$$$@@@@@@@@@@@@@$$$$oooo+++++                      ++++oo$$$@@@@@@@@@@@@@@@@@@$$$$$$$$$$$@@@@@@@@@@@@@@@@$$$$@@@@@@$$,</tspan>
+<tspan dy="1em" x="0%" dx="4em">/ +++oooo$$$$$$$$$oo$$$$$$$@@@@@@@@@@@@@@@@@@$$$$ooo+++++       +++     +++++oo$$@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$@@@@@@@@@@@@@@@@@@$$$$$@@@@@$$,</tspan>
+<tspan dy="1em" x="0%" dx="4em">.*  +oooo$$$$$$$$ooo$$$$$$$@@@@@@@@@@@@@@@@@@@@@@$$$oo+++++++++++++++++++++oo$$@@@@@@@@@@@@@$$$$$$$$$$oooooo$$$$$$$$@@@@@@@@@@@@@@$$$$$$$$@$$$,</tspan>
+<tspan dy="1em" x="0%" dx="5em">.,* ++o$$$@@@$$$$$$$$$$$$$$$$$$$$$$@@@@@@@@@@@@@@@$$$oooooooooooo++ooooo$$@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$@@@@@@@@@@@@@@@@@@@@@@$$$$$$$oo .</tspan>
+<tspan dy="1em" x="0%" dx="5.5em">.,/  +o$$$@@$$$$$$$$$$$$$$$$$$$$$$@@@@@@@@@@@@@@@@$$$$ooooooooooooooo$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$oo/.</tspan>
+<tspan dy="1em" x="0%" dx="6em">.,** ooo$$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$@@$$$$$$$o+ *</tspan>
+<tspan dy="1em" x="0%" dx="6.5em">,,* oo$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$@@@@@@@@@@@@@@@@$$$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$ooo$$$$$$$ooooo+ ,</tspan>
+<tspan dy="1em" x="0%" dx="6.5em">,*/o@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$oooooooooo$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@o+ +oooooo++/...</tspan>
+<tspan dy="1em" x="0%" dx="6.5em">** o@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@+   +ooooo++/</tspan>
+<tspan dy="1em" x="0%" dx="6.5em">.* o@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$oo ///++oo+++ *</tspan>
+<tspan dy="1em" x="0%" dx="7em">,*+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$o  //// ++++++/.</tspan>
+<tspan dy="1em" x="0%" dx="7em">.,/$$@@@@$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$o /**///  +++  /.</tspan>
+<tspan dy="1em" x="0%" dx="7em">.,*oo@@@@$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@//**///  +++  /.</tspan>
+<tspan dy="1em" x="0%" dx="7em">.*/+o@@@@$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$ //**//// +++  *.</tspan>
+<tspan dy="1em" x="0%" dx="8em">. +$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$o+++ooo$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$o //*****//  +  *.</tspan>
+<tspan dy="1em" x="0%" dx="8.5em">* o$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$oo+++++o$$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ /******//     *.</tspan>
+<tspan dy="1em" x="0%" dx="9em">.* o@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$o++++++++++o$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ //*******///   /,</tspan>
+<tspan dy="1em" x="0%" dx="9.5em">,/+$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$oo+++++++++++o$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ /**********/    /</tspan>
+<tspan dy="1em" x="0%" dx="9.5em">.,*/+$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$o++            ++$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$o+ ///************/   /</tspan>
+<tspan dy="1em" x="0%" dx="9.5em">.,**/ ++oo$$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$o+             ++oo$@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@$$$$o+++  ////************/   /</tspan>
+<tspan dy="1em" x="0%" dx="9.5em">..**/////   +oo$$$@@@@@@@@@@@@@@@@@@@@@@@$oo+             +++++o$$$$$$$$$$@@@@@@@@@@@@@$$$$$oooo++++    /////*************/// /</tspan>
+<tspan dy="1em" x="0%" dx="10em">.**////    +++ooooooo$$$$$ooooooo$$$$$$$$o+             ++++++oooo$$$$$$$$$$$$$$$oooooooo++++       /////////************/// /</tspan>
+<tspan dy="1em" x="0%" dx="9.5em">..*////     ++++++++++++++++++oooo$$$$oooo+              +++++++++oo$$$$$$oooooooo++++++++      //////////////************////*</tspan>
+<tspan dy="1em" x="0%" dx="9.5em">..*////      ++++++++++++++++oooo$$$$$o+++                       +++oo$$$$$oooo++++++          //////////////******///****////*</tspan>
+<tspan dy="1em" x="0%" dx="10em">.*///          ++++++   +++oooo$$$$$oo+++           ///          ++oo$$$$$$oo+++++++           ///////////********//****//**,.</tspan>
+<tspan dy="1em" x="0%" dx="9.5em">.,*//       +++++++++++++++ooo$$$$$$$oooooooo++++++     +++++ooo++++oooooo$$$$oooo++++              ////////////////////*/*</tspan>
+<tspan dy="1em" x="0%" dx="9.5em">.,*//       +++++++++++++++ooo$$$$$$$o$$$$$ooooo+++++++++oooooooooooooooooo$$$ooooo++++++            ///////////////////*/*</tspan>
+<tspan dy="1em" x="0%" dx="10em">.*/    ++++++++++++++++ooo$$$$$oo$$$$$$$$@$$$$$oooooooooooooo$$$ooooo++++oooo$$$$$oooo+++++++++       ///////////////////,</tspan>
+<tspan dy="1em" x="0%" dx="10em">.*/   ++++++++++++++++oooo$$$oooo$$$$$$$$$$$$$$$oooooooooooooooooooo+++++oooo$$$$$$oooo+++++++++        ////////////////,</tspan>
+<tspan dy="1em" x="0%" dx="10em">.,* +++++++++++oooooooo$$$$$ooooooooo$$$$$$$$$$$oooooooooooo+ooooo++++++++oooooo$$$$$$$$oooo++++++++         //////////*.</tspan>
+<tspan dy="1em" x="0%" dx="10.5em">,*/ ++++++o+ooooooooo$$$$$$ooooooooo$$$ooo$$$ooooooooooooooooooooo++++++++++oooo$$$$$$$$oooo+++++++          /////////*.</tspan>
+<tspan dy="1em" x="0%" dx="11em">,/+++++++oooooooooo$$$$$$$$$oooooooooooooooooooooooooooooooo+++++++++++++++oooooooo$$$$$ooooo+++++          /////////*.</tspan>
+<tspan dy="1em" x="0%" dx="11em">* +++++++oooooooooooooooooooooooooooooooooooo+++++ooo+++++++++++++++++++++++++++ooooooooooo+++++++          /////////*.</tspan>
+<tspan dy="1em" x="0%" dx="10.5em">.++ ++++++++++++++ooooooooooooooooo+++++++++++++++++++++++++++++++++++++    ++++++++++oooo++++++             //////// *.</tspan>
+<tspan dy="1em" x="0%" dx="10.5em">.oo+++++++++++++++++oooooooooooooooooo++oooooo++++++++++++++++++++++++++++++ooo++++++++++++++++              ////     /.</tspan>
+<tspan dy="1em" x="0%" dx="10.5em">.$o++++++++++++++++++++oooo$$$$$ooo$$$$$$$$$ooooooooooooooooooooooooooooo$$$$$$oo++++++++++                   //     +/.</tspan>
+<tspan dy="1em" x="0%" dx="11em">+$o++++++++++++++++++++++ooooo$@@@@$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$oooo++++++++++                              +o .</tspan>
+<tspan dy="1em" x="0%" dx="11em">o@o++++++++++++++++++++++++oooo$$$$$$$$oo$$$$$$$$$$$$$$$$$$$$$$$$$$$$ooo++++++++++++                                 /.</tspan>
+<tspan dy="1em" x="0%" dx="11em">*$@o+++++++++++++++++++++++++++ooooo$oooooooooooooooooooooooooooooo+++        ++++++                             ++ .</tspan>
+<tspan dy="1em" x="0%" dx="11em">.+@@oo++++++++++++++++++o+++++++++oooooooooooooooooooooooooooooooo++          ++++++                           ++++ .</tspan>
+<tspan dy="1em" x="0%" dx="12em">.+$ooooooo+++++++++oooo++++++++++ooooooooooooooooooooooooo+++++++        +++++++++++               +++  ++++++oo+.</tspan>
+<tspan dy="1em" x="0%" dx="12.5em">.+ooooooo++++++++oooooo+++++++++oooooooo$$$oooooooooooooo++++++         ++++++++++++      +      ++++++++++++o+/</tspan>
+<tspan dy="1em" x="0%" dx="13.5em">*+$$oooooooooooooooooo++++++++ooooooo$$$$$$$$$$$oooooo++++++          ++++++++++++++++++++++++++++++++++++,</tspan>
+<tspan dy="1em" x="0%" dx="13.5em">. $$oooooooooooooooooooooo++++ooooooooo$$oooooooooooo+++++++     ++   +++++++++++++++++++++++++++++++++oo+.</tspan>
+<tspan dy="1em" x="0%" dx="14.5em">*o$$$oooooooooooooooooooooo++++oooooooooooooooooooo+++++++++++++++  ++++++++++++++++++++++++++++++ooo+ ,</tspan>
+<tspan dy="1em" x="0%" dx="15.5em"> $$$$oooooooooooooooooo+++++++++++ooooooooo+++++++++++++++++++    ++++++++++++++++++++++++++ooooo+/.</tspan>
+<tspan dy="1em" x="0%" dx="15.5em">. $$$$$$$$oooooooooooo++++++++++++++ooooo++++++++++++++++ +++     +++++++++++++++++++++++oooooooo.</tspan>
+<tspan dy="1em" x="0%" dx="17em">.$$$$$$$$$ooooooooo++++++++++++++++++++++++++++++              ++++++++++++++oooo+ooooooooo ,.</tspan>
+<tspan dy="1em" x="0%" dx="17.5em">,+$$$$$$$ooooooooo+++++++++++++++++++++++++++++               ++++++++++++++ooooooooooooo/.</tspan>
+<tspan dy="1em" x="0%" dx="18.5em">. $$$$$$$oooooooo+++++++++++++++++++++++++++++   +++      +++++++ooooooooooooooooo$$*</tspan>
+<tspan dy="1em" x="0%" dx="19em">.$$$$$$$$oooooooo+++++++++++++++++++++ ++++++  +++++    ++++++++oooooooooooooooo$$*</tspan>
+<tspan dy="1em" x="0%" dx="20em">,+$$$$$$ooooooooo++++++++++++++++++++    ++     +++++++++++ooooooooooooo$$$$$$$$,</tspan>
+<tspan dy="1em" x="0%" dx="21em">,+$$$$$oooooooo+++++++++++++++++++++ +++++  +++++++++++oooooooooooooo$$$$$$$$ </tspan>
+<tspan dy="1em" x="0%" dx="22em">+$$$$$$$$ooooooo++++++++++++++++++++++++++++++++++ooooo$$$$$ooooo$$$$$$@,</tspan>
+<tspan dy="1em" x="0%" dx="23em">.*$$$$$$$$$oooooooooo++++++++++++++++++++oooooooooo$$$$$$$$$$$$$$$*</tspan>
+<tspan dy="1em" x="0%" dx="24em">, o$@$$$$$$$$oooooooooooooo+++++++++ooooooooo$$$$$$$$$$$$$$$@@@o*</tspan>
+<tspan dy="1em" x="0%" dx="26em">*@@@@$$$$$$$$$$$ooooo$$ooooooooooooooo$$$$$$$$$$$$$$$@@@,</tspan>
+<tspan dy="1em" x="0%" dx="26.5em"> o$@@@@@$$$$$$$$$$$$$$$$$$$$$ooooooo$$$$$$$$$$$$$$@@ ,</tspan>
+<tspan dy="1em" x="0%" dx="27.5em">.*o$@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$@@@@@@$ .</tspan>
+<tspan dy="1em" x="0%" dx="29em">.,,*o$@@@@@@@@@@@@@@@@@@@@@$$$$$$$$$$$$@@@$o*.</tspan>
+<tspan dy="1em" x="0%" dx="32.5em">.,,* +++++++++++++++++++++++++++ ,</tspan></text>
+<circle cx="319" cy="644" r="17" fill="transparent;" fill-opacity="0.1"></circle>
+<circle cx="642" cy="633" r="17" fill="transparent;" fill-opacity="0.1"></circle>
+</svg></span><span style="text-align: left;">contact
+</span><span style="line-height:8px;font-size:8px;margin-left:31px">
+ _       _                                                                                                 _  _
+(_)     | |                                                                ____                           (_)| |
+ _  ___ | |_ __   __  __ _  _ __      _ __ ___    ___  _ __  ____  __ _   / __ \   __ _  _ __ ___    __ _  _ | |     ___   ___   _ __ ___
+| |/ __|| __|\ \ / / / _` || '_ \    | '_ ` _ \  / _ \| '__||_  / / _` | / / _` | / _` || '_ ` _ \  / _` || || |    / __| / _ \ | '_ ` _ \
+| |\__ \| |_  \ V / | (_| || | | | _ | | | | | ||  __/| |    / / | (_| || | (_| || (_| || | | | | || (_| || || | _ | (__ | (_) || | | | | |
+|_||___/ \__|  \_/   \__,_||_| |_|(_)|_| |_| |_| \___||_|   /___| \__,_| \ \__,_| \__, ||_| |_| |_| \__,_||_||_|(_) \___| \___/ |_| |_| |_|
+                                                                          \____/   __/ |
+                                                                                  |___/
+</span><span style="text-align:center;" id="sysadm"><script><!--
+// Remember http://www.towelday.org/
+function SysAdmDay(t) {
+  let lD=new Date(t.getFullYear(),6,31);
+  switch(lD.getDay()) {
+    default:
+      lD.setDate(lD.getDate()-7);
+      while (lD.getDay()<5) {lD.setDate(lD.getDate()+1);}
+      return lD;break;
+    case 5: return lD;break;
+    case 6: return lD.setDate(lD.getDate()-1);break;
+  }
+}
+var n=new Date(); var td=SysAdmDay(n); var nh=n.getHours();
+if (n.getTime()>td.getTime()) {td=SysAdmDay(new Date(n.getFullYear()+1,6,31))}
+var remain = Math.ceil((td.getTime()-n.getTime())/86400000);
+var sd=td.getDay(); an=td.getFullYear()-1999;
+if (remain>206)
+  sysadm.innerHTML='SysAdminDay #'+an+' is on '+td.getDate()+(sd=31?"st":"th")+' July '+td.getFullYear()+' (in '+remain+' day'+(remain>1?"s":"")+')!';
+else if (remain>1)
+  sysadm.innerHTML=''+remain+' day'+(remain>1?"s":"")+' left until SysAdmin Day!';
+else if (remain==1)
+  sysadm.innerHTML='Tomorrow is SysAdmin Day!';
+else
+  sysadm.innerHTML="Today is SysAdmin Day. Don't forget to show your appreciation!🍺";
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/app/sw.js')
+           .then(function() { console.log("Service Worker Registered!"); });
+}
+function switchTheme() {
+  if (dark.innerHTML=='☀️bright site')
+       { document.documentElement.setAttribute('data-theme',  'dark');dark.innerHTML='🌘  dark site'; }
+  else { document.documentElement.setAttribute('data-theme', 'light');dark.innerHTML='☀️bright site'; }
+}
+window.onload = function(){if (nh<5 || nh>20) switchTheme();}
+--></script><noscript>nobody expects the spanish inquisition</noscript></span><!--<a href="https://merza.is/app/index.php">Admin Control Panel</a>--></code></pre></div></body></html>
