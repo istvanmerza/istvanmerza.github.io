@@ -1,5 +1,4 @@
 # merza.is
-My personal website
 
 [Lighthouse test](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://merza.is)
 
