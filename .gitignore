@@ -5,3 +5,8 @@
 thumbs.db
 *.php
 tmp/
+_site
+build
+public
+.gitlab-ci.yml
+CNAME
