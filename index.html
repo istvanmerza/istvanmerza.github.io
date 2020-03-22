@@ -4,7 +4,7 @@
    <title>Istvan Merza</title>
    <!-- Oh so you can read HTML? Fantastic! I'm sure you can find me on LinkedIn and Youtube as well :-) -->
    <meta charset="UTF-8">
-   <meta name="description" content="An experimental hobby/demo web server maintained (hopefully) by Istvan Merza. I created it for fun. This is my real name." />
+   <meta name="description" content="Personal hobby/demo web presence maintained by Istvan Merza." />
    <link rel="preload" href="https://www.googletagmanager.com/gtag/js?id=UA-141707845-1" as="script">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141707845-1"></script>
 <script>
@@ -39,7 +39,13 @@
  * experiment
  * own server
  * learn
-</span><span id=dark onclick="switchTheme()"  style="display: inline-block; width:204px;text-align:right;">☀️bright site</span><span style="margin-left:31px;text-align:center;"><!-- Such picture, so ASCII, wow! https://manytools.org/hacker-tools/convert-images-to-ascii-art/ -->
+</span><span style="display: inline-block; width:204px;">you can
+ * Send me a <a href="https://paypal.me/pools/c/8nBcXY4KbO">beer🍺</a>
+ * Send me a <a href="https://t.me/sorfutar">message</a>
+ * Find me on <a href="https://www.linkedin.com/in/istvanmerza">LinkedIn</a>
+ * Find me on <a href="https://www.youtube.com/user/sorfutar">Youtube</a>
+ * <span id=dark onclick="switchTheme()" style="display: inline;">Switch to the 🌘 dark site</span>
+</span><span style="margin-left:31px;text-align:center;"><!-- Such picture, so ASCII, wow! https://manytools.org/hacker-tools/convert-images-to-ascii-art/ -->
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" viewBox="0 0 1098 1212">
 <text><tspan dy="1em" x="0%" dx="28.5em">....                     .*/  +++ /,</tspan>
 <tspan dy="1em" x="0%" dx="26.5em">.......,,,,...          ..,** +oooo++ooooo+ /***,****</tspan>
@@ -185,9 +191,9 @@ if('serviceWorker' in navigator) {
            .then(function() { console.log("Service Worker Registered!"); });
 }
 function switchTheme() {
-  if (dark.innerHTML=='☀️bright site')
-       { document.documentElement.setAttribute('data-theme',  'dark');dark.innerHTML='🌘  dark site'; }
-  else { document.documentElement.setAttribute('data-theme', 'light');dark.innerHTML='☀️bright site'; }
+  if (dark.innerHTML=='Switch to the 🌘 dark site')
+       { document.documentElement.setAttribute('data-theme',  'dark');dark.innerHTML='Switch to the ☀️bright site'; }
+  else { document.documentElement.setAttribute('data-theme', 'light');dark.innerHTML='Switch to the 🌘 dark site'; }
 }
 window.onload = function(){if (nh<5 || nh>20) switchTheme();}
 --></script><noscript>nobody expects the spanish inquisition</noscript></span><!--<a href="https://merza.is/app/index.php">Admin Control Panel</a>--></code></pre></div></body></html>
