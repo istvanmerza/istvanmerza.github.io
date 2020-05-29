@@ -1,9 +1,3 @@
-// I include GTAG in true 1984 spirit :-) GIYF!
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-141707845-1');
-
 // Remember http://www.towelday.org/
 function SysAdmDay(t) {
   let lD=new Date(t.getFullYear(),6,31);
