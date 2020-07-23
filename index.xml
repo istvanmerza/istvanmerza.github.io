@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Istvan Merza - RSS Channel</title>
+    <link>https://www.merza.is/</link>
+    <description>Istvan Merza | Crawl in here - Totally worth it!!</description>
+    <atom:link href="https://www.merza.is/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Istvan Merza | Hungarian 📕</title>
+      <link>https://www.merza.is/hungarian/</link>
+      <pubDate>Thu, 23 Jul 2020 16:42:07 +0200</pubDate>      
+      <guid>https://www.merza.is/hungarian/</guid>
+      <description>Mein Luftkissenfahrzeug ist voller Aale. 🤣</description>
+    </item>
+    <item>
+      <title>Istvan Merza | Sparkly Glowy!!</title>
+      <link>https://www.merza.is/glowing/</link>
+      <pubDate>Thu, 23 Jul 2020 16:42:07 +0200</pubDate>      
+      <guid>https://www.merza.is/glowing/</guid>
+      <description>Honey, I&#39;m glowing!! 😂</description>
+    </item>
+    <item>
+      <title>Istvan Merza | Taking a Break? ☕</title>
+      <link>https://www.merza.is/having-a-break/</link>
+      <pubDate>Thu, 23 Jul 2020 16:42:07 +0200</pubDate>      
+      <guid>https://www.merza.is/having-a-break/</guid>
+      <description>429 Why don&#39;t we take a break? ☕</description>
+    </item>
+    <item>
+      <title>Istvan Merza | Taking a Break? ☕</title>
+      <link>https://www.merza.is/taking-a-break/</link>
+      <pubDate>Thu, 23 Jul 2020 16:42:07 +0200</pubDate>      
+      <guid>https://www.merza.is/taking-a-break/</guid>
+      <description>429 Why don&#39;t we take a break? ☕</description>
+    </item>
+    <item>
+      <title>Istvan Merza | Watching ISS</title>
+      <link>https://www.merza.is/watching/</link>
+      <pubDate>Thu, 23 Jul 2020 16:42:07 +0200</pubDate>      
+      <guid>https://www.merza.is/watching/</guid>
+      <description>Earthwatching rulz</description>
+    </item>
+  </channel>
+</rss>
