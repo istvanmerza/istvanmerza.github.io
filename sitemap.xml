@@ -3,22 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.merza.is/</loc>
+    <lastmod>2020-07-23T16:42:07+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.merza.is/hungarian/</loc>
-    <lastmod>2020-07-23T16:42:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.merza.is/glowing/</loc>
-    <lastmod>2020-07-23T16:42:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.merza.is/having-a-break/</loc>
-    <lastmod>2020-07-23T16:42:07+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.merza.is/taking-a-break/</loc>
     <lastmod>2020-07-23T16:42:07+02:00</lastmod>
   </url>
   
@@ -28,11 +18,23 @@
   </url>
   
   <url>
-    <loc>https://www.merza.is/</loc>
+    <loc>https://www.merza.is/posts/</loc>
+    <lastmod>2020-07-23T16:42:07+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.merza.is/nuindex/</loc>
+    <loc>https://www.merza.is/taking-a-break/</loc>
+    <lastmod>2019-09-23T16:42:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.merza.is/glowing/</loc>
+    <lastmod>2019-07-01T16:42:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.merza.is/404.html</loc>
+    <lastmod>1978-05-04T05:04:20+00:00</lastmod>
   </url>
   
 </urlset>
