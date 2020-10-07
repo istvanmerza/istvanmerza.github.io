@@ -40,5 +40,20 @@
       <guid>https://www.merza.is/404.html</guid>
       <description>404 Error ¯\_(ツ)_/¯ _____ _ _ _ _ _ / __ \ | | | | | | (_) | | | / \/ ___ _ __ __ _ _ __ __ _| |_ _ _| | __ _| |_ _ ___ _ __ ___| | | | / _ \| &#39;_ \ / _` | &#39;__/ _` | __| | | | |/ _` | __| |/ _ \| &#39;_ \/ __| | | \__/\ (_) | | | | (_| | | | (_| | |_| |_| | | (_| | |_| | (_) | | | \__ \_| \____/\___/|_| |_|\__, |_| \__,_|\__|\__,_|_|\__,_|\__|_|\___/|_| |_|___(_) __ __ __/ | _ __ _ \ \ / / |___/ | | / _| | |_ \ V /___ _ _ | |__ __ ___ _____ | |_ ___ _ _ _ __ __| (_) \ // _ \| | | | | &#39;_ \ / _` \ \ / / _ \ | _/ _ \| | | | &#39;_ \ / _` | | | (_) | |_| | | | | | (_| |\ V / __/ | || (_) | |_| | | | | (_| |_ \_/\___/ \__,_| |_| |_|\__,_| \_/ \___| |_| \___/ \__,_|_| |_|\__,_(_) .</description>
     </item>
+    <item>
+      <title>merza.is | My Buddies</title>
+      <link>https://www.merza.is/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>      
+      <guid>https://www.merza.is/links/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>merza.is | Wall of Shirts</title>
+      <link>https://www.merza.is/tees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>      
+      <guid>https://www.merza.is/tees/</guid>
+      <description>Hey there - check out the awesome tee shirts I got over the past few years! Some of these cool designs may not be available to buy anymore - so this is history being made right here. ;-)
+I usually get them from Qwertee.com. They do ship to Europe and regularly have 2-for-1 discounts available.</description>
+    </item>
   </channel>
 </rss>
