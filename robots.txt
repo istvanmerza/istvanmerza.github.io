@@ -8,3 +8,5 @@ User-Agent: *
 Disallow: /hi-little-fella/
 Disallow: /harvesting-my-email-address-is-not-ok/
 Disallow: /kill-all-humans/
+
+Sitemap: https://www.merza.is/sitemap.xml
