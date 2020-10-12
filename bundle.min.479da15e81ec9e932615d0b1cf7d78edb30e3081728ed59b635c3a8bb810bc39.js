@@ -1,4 +1,4 @@
-function initRedirect(){if(location.hostname.search("https://www.merza.is")!=0){var path;if(location.pathname.lastIndexOf("/",0)===0){path=location.pathname;}else{path="/"+location.pathname;}
+function initRedirect(){if(location.hostname.search("www.merza.is")!=0){var path;if(location.pathname.lastIndexOf("/",0)===0){path=location.pathname;}else{path="/"+location.pathname;}
 location.href="https://www.merza.is"+path+location.search+location.hash;}}
 window.addEventListener("load",initRedirect,true);;if('serviceWorker'in navigator){navigator.serviceWorker.register('/app/sw.js').then(function(){console.log("Service Worker Registered!");});};function SysAdmDay(t){let lD=new Date(t,6,31);switch(lD.getDay()){case 6:lD.setDate(lD.getDate()-1);break;case 5:break;default:lD.setDate(lD.getDate()-7);while(lD.getDay()<5)lD.setDate(lD.getDate()+1);break;}
 return lD;}
