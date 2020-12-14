@@ -3,8 +3,24 @@
   <channel>
     <title>István Merza - RSS Channel - Posts</title>
     <link>https://www.merza.is/posts/</link>
-    <description>István Merza | Crawl in here - Totally worth it!!</description>    <lastBuildDate>Thu, 23 Jul 2020 16:42:07 +0200</lastBuildDate>
+    <description>István Merza | Crawl in here - Totally worth it!!</description>    <lastBuildDate>Mon, 14 Dec 2020 12:05:00 +0200</lastBuildDate>
     <atom:link href="https://www.merza.is/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>István Merza | Writing about things</title>
+      <link>https://www.merza.is/writing-about-things/</link>
+      <pubDate>Mon, 14 Dec 2020 12:05:00 +0200</pubDate>      
+      <guid>https://www.merza.is/writing-about-things/</guid>
+      <description>A long time ago one of my managers told me &amp;ldquo;you should write a blog!&amp;rdquo;&amp;hellip; I dismissed the idea back then mainly because I did not like following the trends and I did not want to make another Wordpress site on the internet&amp;hellip;
+But yesterday late night while browsing memes on 9gag I came across this picture of a Japanese girl band whose name did not come to my mind&amp;hellip;</description>
+    </item>
+    <item>
+      <title>István Merza | My Buddies</title>
+      <link>https://www.merza.is/links/</link>
+      <pubDate>Wed, 09 Dec 2020 14:26:00 +0200</pubDate>      
+      <guid>https://www.merza.is/links/</guid>
+      <description>Just a couple of links pointing to old and new friends sites.
+If you think your site should / should not appear here then send me a message!</description>
+    </item>
     <item>
       <title>István Merza | Hungarian 📕</title>
       <link>https://www.merza.is/hungarian/</link>
