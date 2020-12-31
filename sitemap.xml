@@ -3,23 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.merza.is/shop/</loc>
+    <lastmod>2020-12-22T14:37:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.merza.is/</loc>
     <lastmod>2020-12-14T12:05:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.merza.is/posts/</loc>
+    <loc>https://www.merza.is/sysadmin/</loc>
     <lastmod>2020-12-14T12:05:00+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.merza.is/writing-about-things/</loc>
+    <loc>https://www.merza.is/sysadmin/writing-about-stuff/</loc>
     <lastmod>2020-12-14T12:05:00+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.merza.is/links/</loc>
     <lastmod>2020-12-09T14:26:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.merza.is/tees/</loc>
+    <lastmod>2020-12-07T18:33:00+00:00</lastmod>
   </url>
   
   <url>
@@ -45,10 +55,6 @@
   <url>
     <loc>https://www.merza.is/404.html</loc>
     <lastmod>1978-05-04T04:20:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.merza.is/tees/</loc>
   </url>
   
 </urlset>

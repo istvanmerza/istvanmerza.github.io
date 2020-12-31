@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> - RSS Channel - Posts</title>
-    <link>https://www.merza.is/posts/</link>
-    <description> | Crawl in here - Totally worth it!!</description>    <lastBuildDate>Mon, 14 Dec 2020 12:05:00 +0200</lastBuildDate>
-    <atom:link href="https://www.merza.is/posts/index.xml" rel="self" type="application/rss+xml" />
+    <title>/home/merza.is - RSS Channel - Sysadmins</title>
+    <link>https://www.merza.is/sysadmin/</link>
+    <description>/home/merza.is | Crawl in here - Totally worth it!!</description>    <lastBuildDate>Mon, 14 Dec 2020 12:05:00 +0200</lastBuildDate>
+    <atom:link href="https://www.merza.is/sysadmin/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title> | Writing about things</title>
-      <link>https://www.merza.is/writing-about-things/</link>
+      <title>/home/merza.is | Writing about things</title>
+      <link>https://www.merza.is/sysadmin/writing-about-stuff/</link>
       <pubDate>Mon, 14 Dec 2020 12:05:00 +0200</pubDate>      
-      <guid>https://www.merza.is/writing-about-things/</guid>
+      <guid>https://www.merza.is/sysadmin/writing-about-stuff/</guid>
       <description>A long time ago one of my managers told me &amp;ldquo;you should write a blog!&amp;rdquo;&amp;hellip; I dismissed the idea back then mainly because I did not like following the trends and I did not want to make another Wordpress site on the internet&amp;hellip;
 But yesterday late night while browsing memes on 9gag I came across this picture of a Japanese girl band whose name did not come to my mind&amp;hellip;</description>
     </item>
     <item>
-      <title> | My Buddies</title>
+      <title>/home/merza.is | My Buddies</title>
       <link>https://www.merza.is/links/</link>
       <pubDate>Wed, 09 Dec 2020 14:26:00 +0200</pubDate>      
       <guid>https://www.merza.is/links/</guid>
@@ -22,28 +22,36 @@ But yesterday late night while browsing memes on 9gag I came across this picture
 If you think your site should / should not appear here then send me a message!</description>
     </item>
     <item>
-      <title> | Hungarian 📕</title>
+      <title>/home/merza.is | Wall of Shirts</title>
+      <link>https://www.merza.is/tees/</link>
+      <pubDate>Mon, 07 Dec 2020 18:33:00 +0000</pubDate>      
+      <guid>https://www.merza.is/tees/</guid>
+      <description>Hey there - check out the awesome tee shirts I got over the past few years! Some of these cool designs may not be available to buy anymore - so this is history being made right here. ;-)
+I usually get them from Qwertee.com. They do ship to Europe and regularly have 2-for-1 discounts available.</description>
+    </item>
+    <item>
+      <title>/home/merza.is | Hungarian 📕</title>
       <link>https://www.merza.is/hungarian/</link>
       <pubDate>Thu, 23 Jul 2020 16:42:07 +0200</pubDate>      
       <guid>https://www.merza.is/hungarian/</guid>
       <description>Mein Luftkissenfahrzeug ist voller Aale. 🤣</description>
     </item>
     <item>
-      <title> | Looking at things</title>
+      <title>/home/merza.is | Looking at things</title>
       <link>https://www.merza.is/watching/</link>
       <pubDate>Thu, 23 Jul 2020 16:42:07 +0200</pubDate>      
       <guid>https://www.merza.is/watching/</guid>
       <description>Earthwatching rulz</description>
     </item>
     <item>
-      <title> | Taking a Break? ☕</title>
+      <title>/home/merza.is | Taking a Break? ☕</title>
       <link>https://www.merza.is/taking-a-break/</link>
       <pubDate>Mon, 23 Sep 2019 16:42:07 +0200</pubDate>      
       <guid>https://www.merza.is/taking-a-break/</guid>
       <description>429 Why don&#39;t we take a break? ☕</description>
     </item>
     <item>
-      <title> | Honey, I&#39;m glowing!! 😂</title>
+      <title>/home/merza.is | Honey, I&#39;m glowing!! 😂</title>
       <link>https://www.merza.is/glowing/</link>
       <pubDate>Mon, 01 Jul 2019 16:42:07 +0200</pubDate>      
       <guid>https://www.merza.is/glowing/</guid>

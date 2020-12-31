@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 635 635" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style type="text/css">
+.blink{animation:blinkingText 1.2s infinite}
+@keyframes blinkingText{0%{opacity:0}24%{opacity:0}25%{opacity:1}74%{opacity:1}75%{opacity:0}100%{opacity:0}}
+</style>
+</defs> 
+  <g fill="#2b2b2c" stroke-width=".3">
+    <path d="m5 483v33h20v-33zm0-88v33h20v-33z"/>
+    <path d="m121 444v-30h-64v-19h85v121h-85v-71zm0 20h-43v32h43z"/>
+  </g>
+  <path d="m338 89c-7 0.07-14 0.8-21 2-32 7-59 28-74 58-14 29-14 63 0.4 93 5 11 13 21 21 30 18 17 38 27 62 30 19 2 40-1 57-9 22-11 40-28 51-50s14-46 8-70c-11-50-56-84-105-84zm1 236c-17 0-34 0.2-42 0.6-24 1-63 5-69 6-3 0.8-8 3-11 6-4 3-6 6-11 14-9 15-16 29-22 44h57v-60h20v181l-85-0.6v-100c-6 29-19 67-10 94 3 8 8 14 16 18 36 8 86 11 123 12h3e-3c56 2 115-1 174-8 10-1 14-2 18-4 40-32 9-113-9-151l-3-7h-10v-18c-4-7-7-10-9-12-3-3-10-7-14-8-6-1-45-5-69-6-8-0.4-25-0.6-42-0.6zm156 70v121h-20v-121zm-201 0h148v121h-21v-102h-42v102h-22v-102h-43v102h-20zm-96 19v82l43 0.3v-82z" fill="#2b2b2c" stroke-width=".5"/>
+  <g fill="#97d700">
+    <path d="m294 395h148v121h-21v-102h-42v102h-22v-102h-43v102h-20c-4e-3 0 0-121 0-121z"/>
+    <path d="m475 395h20v121h-20z"/>
+    <path d="m475 335v35h20v-35z"/>
+  </g>
+  <path d="m630 546v-19h-118v19z" fill="#2b2b2c" stroke-width=".3" class="blink" opacity="0" />
+</svg>

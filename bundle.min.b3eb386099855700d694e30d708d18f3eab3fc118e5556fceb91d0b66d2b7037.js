@@ -6,7 +6,7 @@ var remain=Math.ceil((td.getTime()-n.getTime())/86400000);var sd=td.getDate();an
 document.getElementById('sysadm').innerHTML='SysAdminDay #'+an+' is on '+sd+(sd==31?"st":"th")+' July '+td.getFullYear()+' (in '+remain+' day'+(remain>1?"s":"")+')!';else if(remain>1)
 document.getElementById('sysadm').innerHTML=''+remain+' day'+(remain>1?"s":"")+' left until SysAdmin Day!';else if(remain==1)
 document.getElementById('sysadm').innerHTML='Tomorrow is SysAdmin Day!';else
-document.getElementById('sysadm').innerHTML="Today is SysAdmin Day. Don't forget to show your appreciation!🍺";}
+document.getElementById('sysadm').innerHTML="Happy SysAdmin Day! Don't forget to show your appreciation!🍺";}
 window.addEventListener("load",initSysAdm,true);;function setTheme(){if((typeof(localStorage)!=="undefined"))
 switch(localStorage.getItem('theme')){default:case 'dark':document.documentElement.setAttribute('data-theme','dark');document.getElementById('dark').innerHTML='Switch to the ☀️ bright site';break;case 'light':document.documentElement.setAttribute('data-theme','light');document.getElementById('dark').innerHTML='Switch to the 🌘 dark site';break;}}
 function switchTheme(){if((typeof(localStorage)!=="undefined"))

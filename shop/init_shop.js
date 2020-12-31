@@ -1,0 +1,1 @@
+var spread_shop_config = {shopName: 'admins',locale: 'en_EU',prefix: 'https://shop.spreadshirt.it',baseId: 'adminshop'};
