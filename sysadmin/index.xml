@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>/home/merza.is - RSS Channel - Sysadmins</title>
+    <title>/home/merza.is - RSS Channel - Life of a SysAdmin</title>
     <link>https://www.merza.is/sysadmin/</link>
-    <description>/home/merza.is | Crawl in here - Totally worth it!!</description>    <lastBuildDate>Mon, 14 Dec 2020 12:05:00 +0200</lastBuildDate>
+    <description>/home/merza.is | Crawl in here - Totally worth it!!</description>    <lastBuildDate>Mon, 07 Dec 2020 18:33:00 +0000</lastBuildDate>
     <atom:link href="https://www.merza.is/sysadmin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>/home/merza.is | Writing about things</title>
