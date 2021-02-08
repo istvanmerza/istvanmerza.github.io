@@ -6,13 +6,6 @@
     <description>/home/merza.is | Crawl in here - Totally worth it!!</description>    <lastBuildDate>Mon, 14 Dec 2020 12:05:00 +0200</lastBuildDate>
     <atom:link href="https://www.merza.is/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>/home/merza.is | admin:shop</title>
-      <link>https://www.merza.is/shop/</link>
-      <pubDate>Tue, 22 Dec 2020 14:37:00 +0000</pubDate>      
-      <guid>https://www.merza.is/shop/</guid>
-      <description>Visit admin:shop!</description>
-    </item>
-    <item>
       <title>/home/merza.is | Writing about things</title>
       <link>https://www.merza.is/sysadmin/writing-about-stuff/</link>
       <pubDate>Mon, 14 Dec 2020 12:05:00 +0200</pubDate>      
