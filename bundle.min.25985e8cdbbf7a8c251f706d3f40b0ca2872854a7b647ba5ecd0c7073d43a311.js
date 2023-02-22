@@ -5,10 +5,10 @@ return lD;}
 function initSysAdm(){var sysadm=document.getElementById('sysadm');if(sysadm==null){var node=document.createElement("SPAN");var textnode=document.createTextNode("SysAdminDay is on the last Friday of July");node.setAttribute("id","sysadm");node.appendChild(textnode);document.getElementsByTagName("main")[0].appendChild(node);}
 var n=new Date();var td=SysAdmDay(n.getFullYear());var nh=n.getHours();if(n.getTime()>td.getTime()){td=SysAdmDay(n.getFullYear()+1)}
 var remain=Math.ceil((td.getTime()-n.getTime())/86400000);var sd=td.getDate();an=td.getFullYear()-1999;if(remain>206)
-document.getElementById('sysadm').innerHTML='SysAdminDay #'+an+' is on '+sd+(sd==31?"st":"th")+' July '+td.getFullYear()+' (in '+remain+' day'+(remain>1?"s":"")+')!';else if(remain>1)
-document.getElementById('sysadm').innerHTML=''+remain+' day'+(remain>1?"s":"")+' left until SysAdmin Day!';else if(remain==1)
-document.getElementById('sysadm').innerHTML='Tomorrow is SysAdmin Day!';else
-document.getElementById('sysadm').innerHTML="Happy SysAdmin Day! Don't forget to show your appreciation!🍺";}
+document.getElementById('sysadm').innerHTML='<a href="https://sysadminday.com/" target="_blank">SysAdmin Day</a> #'+an+' is on '+sd+(sd==31?"st":"th")+' July '+td.getFullYear()+' (in '+remain+' day'+(remain>1?"s":"")+')!';else if(remain>1)
+document.getElementById('sysadm').innerHTML=''+remain+' day'+(remain>1?"s":"")+' left until <a href="https://sysadminday.com/" target="_blank">SysAdmin Day</a>!';else if(remain==1)
+document.getElementById('sysadm').innerHTML='Tomorrow is <a href="https://sysadminday.com/" target="_blank">SysAdmin Day</a>!';else
+document.getElementById('sysadm').innerHTML='Happy <a href="https://sysadminday.com/" target="_blank">SysAdmin Day</a>! Don\'t forget to show your appreciation!🍺';}
 window.addEventListener("load",initSysAdm,true);;function setTheme(){if((typeof(localStorage)!=="undefined"))
 switch(localStorage.getItem('theme')){default:case 'dark':document.documentElement.setAttribute('data-theme','dark');document.getElementById('dark').innerHTML='Switch to the ☀️ bright site';break;case 'light':document.documentElement.setAttribute('data-theme','light');document.getElementById('dark').innerHTML='Switch to the 🌘 dark site';break;}}
 function switchTheme(){if((typeof(localStorage)!=="undefined"))
