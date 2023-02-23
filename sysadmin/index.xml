@@ -6,6 +6,13 @@
     <description>/home/merza.is | Crawl in here - Totally worth it!!</description>    <lastBuildDate>Mon, 07 Dec 2020 18:33:00 +0000</lastBuildDate>
     <atom:link href="https://www.merza.is/sysadmin/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>/home/merza.is | Converting AD timestamps to Excel date</title>
+      <link>https://www.merza.is/converting-timestamps-to-excel-date/</link>
+      <pubDate>Thu, 23 Feb 2023 21:00:00 +0100</pubDate>      
+      <guid>https://www.merza.is/converting-timestamps-to-excel-date/</guid>
+      <description>How To convert AD / NTFS timestamps like pwdLastSet or lastLogonTimeStamp into Excel Date:  Convert online: https://www.epochconverter.com/ldap Convert using Command Line: w32tm /ntte {serial} Convert using Excel formula: =(A1/10^11/8,64)-109205</description>
+    </item>
+    <item>
       <title>/home/merza.is | Writing about things</title>
       <link>https://www.merza.is/sysadmin/writing-about-stuff/</link>
       <pubDate>Mon, 14 Dec 2020 12:05:00 +0200</pubDate>      

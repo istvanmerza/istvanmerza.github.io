@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+   <title>Converting AD timestamps to Excel date - István Merza</title>
+   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src https://www.merza.is/ 'self'; style-src https://www.merza.is/ 'self'; img-src https://www.merza.is/ 'self'; frame-src https://www.youtube.com https://www.ustream.tv https://www.merza.is/ 'self'; child-src https://www.merza.is/ 'self'; connect-src 'self'" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link rel="stylesheet" media="all" href="/style.min.dbe2300c94f4dd0517dc8fbfe6e18fa2d5d7e2d81ad04d69d63ecc58f49cd52c.css" integrity="sha256-2&#43;IwDJT03QUX3I&#43;/5uGPotXX4tga0E1p1j7MWPSc1Sw=" />
+   <link rel="icon" type="image/svg+xml" href="https://www.merza.is/images/logo_wh.svg" media="(prefers-color-scheme:dark)" />
+   <link rel="icon" type="image/svg+xml" href="https://www.merza.is/images/logo_bk.svg" media="(prefers-color-scheme:light)" />
+   <link rel="icon" type="image/png" href="https://www.merza.is/images/logo.png" />
+   <link rel="mask-icon" type="image/svg+xml" href="https://www.merza.is/images/logo_mask.svg" />
+   <link rel="apple-touch-icon" href="https://www.merza.is/images/logo.png" />
+   <link rel="canonical" href="https://www.merza.is/converting-timestamps-to-excel-date/" />
+   
+   <meta name="description" content="How To convert AD / NTFS timestamps like pwdLastSet or lastLogonTimeStamp into Excel Date:  Convert online: https://www.epochconverter.com/ldap Convert using Command Line: w32tm /ntte {serial} Convert using Excel formula: =(A1/10^11/8,64)-109205  " />
+   <meta name="author" content="Istvan Merza" />
+   <meta name="color-scheme" content="light dark" />
+   <meta name="supported-color-schemes" content="light dark" />
+<meta property="og:title" content="Converting AD timestamps to Excel date" />
+<meta property="og:description" content="How To convert AD / NTFS timestamps like pwdLastSet or lastLogonTimeStamp into Excel Date:  Convert online: https://www.epochconverter.com/ldap Convert using Command Line: w32tm /ntte {serial} Convert using Excel formula: =(A1/10^11/8,64)-109205  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.merza.is/converting-timestamps-to-excel-date/" />
+<meta property="og:image" content="https://www.merza.is/images/thumbnail.png"/>
+<meta property="article:published_time" content="2023-02-23T21:00:00+01:00" />
+<meta property="article:modified_time" content="2023-02-23T21:00:00+01:00" /><meta property="og:site_name" content="István Merza" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.merza.is/images/thumbnail.png"/>
+
+<meta name="twitter:title" content="Converting AD timestamps to Excel date"/>
+<meta name="twitter:description" content="How To convert AD / NTFS timestamps like pwdLastSet or lastLogonTimeStamp into Excel Date:  Convert online: https://www.epochconverter.com/ldap Convert using Command Line: w32tm /ntte {serial} Convert using Excel formula: =(A1/10^11/8,64)-109205  "/>
+
+</head> 
+<body>
+<header>
+  <nav>
+    <ul>
+      <li class="pull-left ">
+        <a href="https://www.merza.is/"><b>/home/merza.is</b></a>
+      </li>
+      <li class="pull-left current">
+        <a href="/sysadmin/">~/<b>sysadmin</b></a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+	<article>
+		<h1>Converting AD timestamps to Excel date</h1>
+		<b><time>23 Feb 2023 21:00</time></b>
+		<div>
+			<h1 id="how-to-convert-ad--ntfs-timestamps-like-pwdlastset-or-lastlogontimestamp-into-excel-date">How To convert AD / NTFS timestamps like pwdLastSet or lastLogonTimeStamp into Excel Date:</h1>
+<ol>
+<li>Convert online: <a href="https://www.epochconverter.com/ldap">https://www.epochconverter.com/ldap</a></li>
+<li>Convert using Command Line: w32tm /ntte {serial}</li>
+<li>Convert using Excel formula:
+=(A1/10^11/8,64)-109205</li>
+</ol>
+
+		</div>
+	</article>
+</main>
+
+<footer>
+	<div>
+		<span>
+			&copy; 2019-2023 <a href="https://www.merza.is/" title="You know what I mean - Say no more, say no more! Nudge-nudge, wink-wink..."><b>Istvan Merza</b></a>.
+			Some rights reserved. Content on this site licensed <a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Find me at
+		</span>
+		<ul>
+			<li><a href="https://github.com/istvanmerza">GitHub</a></li>
+			<li><a href="https://gitlab.com/istvanmerza">GitLab</a></li>
+			<li><a href="https://www.linkedin.com/in/istvanmerza">LinkedIn</a></li>
+			<li><a href="https://twitter.com/istvanmerza">Twitter</a></li>
+			<li><a href="https://lists.merza.is/"><b id="maillist">Subscribe to Maillist!</b></a></li>
+		</ul>
+	</div>
+</footer>
+<script src="/bundle.min.25985e8cdbbf7a8c251f706d3f40b0ca2872854a7b647ba5ecd0c7073d43a311.js" integrity="sha256-JZhejNu/eowlH3BtP0CwyihyhUp7ZHul7NDHBz1DoxE="></script>
+<noscript><div id="noscript-warning">nobody expects the spanish inquisition</div></noscript>
+</body>
+</html>
