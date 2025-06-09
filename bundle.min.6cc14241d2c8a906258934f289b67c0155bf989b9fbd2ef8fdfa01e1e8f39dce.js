@@ -1,6 +1,5 @@
 async function getBOFH(){var bofh=document.getElementById('bofh');if(bofh!=null){const url="/posts/bofh/excuses";try{const response=await fetch(url);if(!response.ok){throw new Error(`Response status: ${response.status}`);}
-const body=await response.text();var lines=body.split('\n');var line=lines[Math.floor(Math.random()*lines.length)]
-bofh.innerHTML=line;}catch(error){console.error(error.message);}}}
+const body=await response.text();var lines=body.split('\n');var line=lines[Math.floor(Math.random()*lines.length)];if(typeof TypeIt!="undefined"){new TypeIt("#bofh",{strings:line,speed:50,waitUntilVisible:true,loop:false,lifelike:true,breakLines:true,cursor:false,}).go();}else{bofh.innerHTML=line;}}catch(error){console.error(error.message);}}}
 window.addEventListener("load",getBOFH,true);;;function initRedirect(){if(location.hostname.search("www.merza.is")!=0){var path;if(location.pathname.lastIndexOf("/",0)===0){path=location.pathname;}else{path="/"+location.pathname;}
 location.href="https://www.merza.is"+path+location.search+location.hash;}}
 window.addEventListener("load",initRedirect,true);;const prefersDarkScheme=window.matchMedia("(prefers-color-scheme: dark)");var remark_config={host:"https://remark42.merza.is",site_id:"remark",components:["embed"],max_shown_comments:20,show_email_subscription:false,simple_view:true,no_footer:true,theme:(prefersDarkScheme.matches)?"dark":"light"};function initRemark42(){var remarkEmbed=document.getElementById('remark42');if(remarkEmbed!=null){!function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);}}
@@ -19,5 +18,5 @@ document.getElementById('towelday').innerHTML=''+remain+' day'+(remain>1?"s":"")
 document.getElementById('towelday').innerHTML='Tomorrow is Towel Day!';else
 document.getElementById('towelday').innerHTML='Today is Towel Day. Don\'t forget your towel!👍';}}
 window.addEventListener("load",initDayCounters,true);;async function getYourIP(){var checkip=document.getElementById('checkip');if(checkip!=null){const url="https://checkip.merza.is";try{const response=await fetch(url);if(!response.ok){throw new Error(`Response status: ${response.status}`);}
-const body=await response.text();console.log(body);checkip.innerHTML=body;}catch(error){console.error(error.message);}}}
+const body=await response.text();checkip.innerHTML=body;}catch(error){console.error(error.message);}}}
 window.addEventListener("load",getYourIP,true);
