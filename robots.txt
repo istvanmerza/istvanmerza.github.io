@@ -4,9 +4,9 @@
 #100001
 #101101
 #110011
-User-Agent: *
+User-agent: *
 Disallow: /hi-little-fella/
 Disallow: /harvesting-my-email-address-is-not-ok/
 Disallow: /kill-all-humans/
-
-Sitemap: https://www.merza.is/sitemap.xml
+Allow: /
+Sitemap: https://istvanmerza.gitlab.io/sitemap.xml
