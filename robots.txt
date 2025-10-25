@@ -9,4 +9,4 @@ Disallow: /hi-little-fella/
 Disallow: /harvesting-my-email-address-is-not-ok/
 Disallow: /kill-all-humans/
 Allow: /
-Sitemap: https://istvanmerza.gitlab.io/sitemap.xml
+Sitemap: https://www.merza.is/sitemap.xml
