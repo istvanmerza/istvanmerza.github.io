@@ -1,0 +1,1 @@
+function initRedirect(){if(location.hostname.search("www.merza.is")!=0){var e;location.pathname.lastIndexOf("/",0)===0?e=location.pathname:e="/"+location.pathname,location.href="https://www.merza.is"+e+location.search+location.hash}}window.addEventListener("load",initRedirect,!0)
